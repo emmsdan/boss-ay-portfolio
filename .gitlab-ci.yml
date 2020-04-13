@@ -12,14 +12,14 @@ lint:
   stage: test
   script:
     - npm install
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - npm run lint
 
 test:
   stage: test
   script:
     - npm install
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - npm run test
 
 staging:
