@@ -1,0 +1,41 @@
+{
+  "version": "1.2",
+  "route": {
+    "LANDING": "/",
+    "AUTHENTICATION": {
+      "LOGIN": "/login",
+      "SIGNUP": "/register",
+      "FORGOTPASSWORD": "/reset-password",
+      "VERIFYACCOUNT": "/verify-account",
+      "VERIFYTOKEN": "/token-verification",
+      "CHANGEPASSWORD": "/change-password"
+    },
+    "BLOG": {
+      "FETCH_ALL": "/",
+      "FETCH_ONE": "/blog/:blogId",
+      "UPDATE": "/blog/update/:blogId"
+    }
+  },
+  "socialMedia": {
+    "facebook": {
+      "url": "http://facebook.com/emmsdan",
+      "title": "Facebook",
+      "icon": "https://res.cloudinary.com/emmsdan/image/upload/v1582113225/icons/facebook_2.svg"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/emmsdan/",
+      "title": "LinkedIn",
+      "icon": "https://res.cloudinary.com/emmsdan/image/upload/v1582113225/icons/linkedin_2.svg"
+    },
+    "github": {
+      "url": "https://github.com/emmsdan",
+      "title": "Github",
+      "icon": "https://res.cloudinary.com/emmsdan/image/upload/v1582113225/icons/github_2.svg"
+    },
+    "twitter": {
+      "url": "https://twitter.com/EmmsDan",
+      "title": "Twitter",
+      "icon": "https://res.cloudinary.com/emmsdan/image/upload/v1582113225/icons/twitter_2.svg"
+    }
+  }
+}
