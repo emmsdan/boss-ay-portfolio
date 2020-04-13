@@ -1,5 +1,6 @@
 {
   "version": "1.2",
+  "underConstruction": true,
   "route": {
     "LANDING": "/",
     "AUTHENTICATION": {
@@ -25,7 +26,10 @@
       "CREATE": "/blog/new"
     },
     "SITE_MAP": "/site-map",
-    "TERMS_AND_CONDITIONS": "/term-and-privacy"
+    "TERMS_AND_CONDITIONS": "/term-and-privacy",
+    "EMMSDAN": {
+      "CV": "/resume"
+    }
   },
   "socialMedia": {
     "facebook": {
