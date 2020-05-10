@@ -1,0 +1,29 @@
+
+@import 'colors';
+@import 'font';
+@import 'utils';
+
+@import 'header';
+@import 'footer';
+
+// @module
+@import 'infocard';
+
+// $theme
+@import 'dark';
+@import 'light';
+
+* {
+  font-family: 'BalooPaaji';
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  outline: none !important;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
