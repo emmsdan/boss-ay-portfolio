@@ -10,11 +10,22 @@
       "VERIFYTOKEN": "/token-verification",
       "CHANGEPASSWORD": "/change-password"
     },
+    "DASHBOARD": {
+      "PROFILE": "/dashboard/me",
+      "INDEX": "/dashboard",
+      "POSTS": "/dashboard/post",
+      "VIDEOS": "/dashboard/videos",
+      "UPLOAD": "/dashboard/uploads",
+      "EXPERIMENT": "/experiment"
+    },
     "BLOG": {
       "FETCH_ALL": "/",
       "FETCH_ONE": "/blog/:blogId",
-      "UPDATE": "/blog/update/:blogId"
-    }
+      "UPDATE": "/blog/update/:blogId",
+      "CREATE": "/blog/new"
+    },
+    "SITE_MAP": "/site-map",
+    "TERMS_AND_CONDITIONS": "/term-and-privacy"
   },
   "socialMedia": {
     "facebook": {

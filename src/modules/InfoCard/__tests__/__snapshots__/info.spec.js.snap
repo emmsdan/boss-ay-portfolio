@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard.vue should render component with out changes 1`] = `
+<section class="infocard">
+  <div class="info">
+    <h1> app name </h1>
+    <h2> some-description </h2>
+    <div>
+      <router-link-stub to="text-content" tag="a" event="click"><button> /text-content-url</button></router-link-stub>
+      <router-link-stub to="/another-text-content-url" tag="a" event="click"><button class="stack"> another-text-content </button></router-link-stub>
+    </div>
+  </div>
+  <div class="picture"><img src="/a-lovely-image.png"></div>
+</section>
+`;

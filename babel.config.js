@@ -6,16 +6,17 @@ module.exports = {
     'module-resolver',
     {
       root: [
-        './'
+        '<rootDir>'
       ],
       alias: {
         '@api': './src/api/',
-        '@component': './src/component/',
+        '@component': './src/components/',
         '@view': './src/views/',
         '@module': './src/modules/',
         '@service': './src/services',
         '@http': './src/services/http',
         '@theme': './src/theme',
+        '@style': './src/theme/styles.scss',
         '@assets': './src/assets',
         '@svg': './src/assets/svg',
         '@img': './src/assets/img',
