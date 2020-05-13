@@ -18,5 +18,9 @@ $light-theme-header:  #0b61b3 ;
 $dark-theme: rgba(8,71,132,1);
 $dark-theme-header: rgba(0,29,66,1);
 
+$dark-danger: #e60d17;
+$dark-danger-text: #000;
+$dark-warning: #e6b30d;
+$dark-warning-text: #000;
 @import "../../node_modules/bulma/bulma.sass";
    

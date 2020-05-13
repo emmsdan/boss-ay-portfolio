@@ -12,6 +12,9 @@
         </a>
         <div :class="'navbar-menu '+ (showMenu && ' is-active')">
           <div class="navbar-end">
+            <a :href="route.EMMSDAN.CV" class="flex">
+              <img src="@/assets/svg/cv.svg" />
+            </a>
             <a v-if="isLoggedIn" key="user-based-url" :href="route.INDEX">
               <img src="@/assets/svg/dashboard.svg" />
             </a>
@@ -66,7 +69,7 @@ export default {
   },
   data () {
     return {
-      route: { ...settings.route.DASHBOARD },
+      route: { ...settings.route, ...settings.route.DASHBOARD },
       states: ['darkMode', 'isLoggedIn', 'showMenu']
     }
   },
