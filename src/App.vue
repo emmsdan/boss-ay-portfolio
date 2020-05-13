@@ -2,12 +2,7 @@
 <div>
   <TopNotification message="Hi, my web app is still in under construction."/>
   <div id="app" :class="darkMode ? 'dark' : 'light'">
-    <TheHeader no-shadow no-logo/>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/> -->
+    <TheHeader no-shadow/>
     <router-view/>
     <InfoCard style="display: none"/>
     <TheFooter />

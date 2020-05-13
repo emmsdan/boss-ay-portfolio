@@ -2,7 +2,9 @@
   <section>
     <header :class="noShadow && 'is-shadowless'">
       <div class="logo">
-        <img src="@/assets/logo.png" :class="noLogo && 'is-invisible'" />
+        <router-link to="/">
+          <img src="@/assets/logo.png" :class="noLogo && 'is-invisible'" />
+        </router-link>
       </div>
       <div class="menu-box">
         <a role="button" :class="'navbar-burger burger ' + (showMenu && ' is-active')" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="toggleState(2)" v-if="!showMenu">
