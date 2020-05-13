@@ -5,7 +5,7 @@ export default {
     name: 'I am EmmsDan',
     firstButton: {
       text: 'learn more...',
-      url: '/about'
+      url: '/emmauel-daniel-resume.pdf'
     },
     secondButton: {
       text: 'How can I help you?',
