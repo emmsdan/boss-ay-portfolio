@@ -16,16 +16,16 @@ stages:
 lint:
   stage: test
   script:
-    - npm install
+    - yarn install
     # - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - npm run lint
+    - yarn run lint
 
 test:
   stage: test
   script:
-    - npm install
+    - yarn install
     # - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - npm run test
+    - yarn run test:unit
 
 # staging:
 #     type: deploy
@@ -48,8 +48,8 @@ test:
 deploy:
   stage: deploy
   script:
-    - npm i -g netlify-cli
-    - npm run build
+    - yarn i -g netlify-cli
+    - yarn run build
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
   dependencies:
     - test
