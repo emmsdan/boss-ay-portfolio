@@ -25,7 +25,7 @@ test:
   script:
     - yarn install
     # - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - yarn run test
+    - yarn run test:unit
 
 # staging:
 #     type: deploy
