@@ -1,4 +1,9 @@
+@import "../assets/bootstrap.min.css";
+@import "~bulma/bulma.sass";
 
+
+
+// user defined styles
 @import 'colors';
 @import 'font';
 @import 'utils';
@@ -14,6 +19,7 @@
 // $theme
 @import 'dark';
 @import 'light';
+
 
 * {
   font-family: 'BalooPaaji';
