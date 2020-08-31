@@ -41,6 +41,7 @@ window.Toast = Toast
 const st = store.state.darkMode ? 'store.state' : 'store.state.nu'
 
 window.fetch = axios.create({
+  baseURL: process.env.VUE_APP_BLOG_URL || 'http://api.emmsdan.com.ng',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',

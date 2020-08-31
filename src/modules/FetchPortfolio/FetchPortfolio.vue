@@ -1,10 +1,10 @@
 <template>
   <section class="container">
       <div class="card-columns">
-        <div v-for="post in portfolio" class="card" :key="post.id">
+        <div v-for="post in portfolio" class="card border-0" :key="post.id">
           <img class="card-img-top img-fluid" :src="post.thumbnail || randomImage()" alt="Card image cap">
           <div class="card-content">
-            <h4 class="card-title">{{post.title}}</h4>
+            <h3 class="card-title font-weight-bolder">{{post.title}}</h3>
             <p class="card-text">{{post.description}}</p>
           </div>
         </div>
