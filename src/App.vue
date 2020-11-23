@@ -1,7 +1,7 @@
 <template>
 <div>
-  <TopNotification message="Hi, my web app is still in under construction."/>
   <div id="app" :class="darkMode ? 'dark' : 'light'">
+    <TopNotification message="Hi, my web app is still under construction." variant="dark"/>
     <TheHeader no-shadow/>
     <router-view/>
 
