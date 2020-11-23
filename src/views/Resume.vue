@@ -1,13 +1,9 @@
 <template>
   <div id="resume">
-    <Loader timeout="5"/>
-      <a :href="url" class="button is-primary">DOWNLOAD CV</a>
-    <PDFViewer
-      v-bind="{url}"
-      @document-rendered="onDocumentRendered"
-      @document-errored="onDocumentErrored"
-      />
-      <a :href="url" class="button is-primary">DOWNLOAD CV</a>
+    <Loader timeout="10"/>
+      <a :href="url" class="button is-info d-none">DOWNLOAD CV</a>
+    <PDFViewer :url="url" />
+      <a :href="url" class="button is-info">DOWNLOAD CV</a>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   height: 50px;
   width: 100%;
   color: $dark-danger-text;
-  background: $dark-danger !important;
+  background: $dark-danger;
   border-radius: 0;
   display: flex;
   align-content: center;
@@ -11,6 +11,21 @@
   justify-items: center;
   position: fixed;
   z-index: 2;
+
+  &.dark {
+    background: $dark-theme-header;
+    color: $light-theme;
+  }
+  &.light {
+    background: $light-theme;
+    color: $dark-theme-header;
+  }
+
+  &.black {
+    background: $black;
+    color:  $light-theme;
+  }
+
   .top-message {
     background: none !important;
     text-align: center;

@@ -50,6 +50,11 @@ window.fetch = axios.create({
   }
 })
 
+Vue.prototype.$http = window.fetch
+const token = localStorage.getItem('token')
+if (token) {
+  Vue.prototype.$http.defaults.headers.common.Authorization = token
+}
 Vue.use(VueMoment, { moment })
 
 Vue.component('ValidationObserver', ValidationObserver)
