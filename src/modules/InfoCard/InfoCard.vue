@@ -11,6 +11,7 @@
           <button class="stack"> {{ getSecondButtonText }} </button>
         </router-link>
       </div>
+      <slot></slot>
     </div>
     <div class="picture">
       <img :src="getPlaceholderImage" />
