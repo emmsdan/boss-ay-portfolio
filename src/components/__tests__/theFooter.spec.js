@@ -8,7 +8,9 @@ let localVue = createLocalVue()
 localVue.use(VueRouter)
 
 describe('TheFooter.vue', () => {
-  afterAll(() => { localVue = null })
+  afterAll(() => {
+    localVue = null
+  })
 
   // it('should render component with out changes', () => {
   //   const wrapper = shallowMount(TheFooter, { store: localStore, localVue })

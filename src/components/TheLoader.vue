@@ -1,11 +1,10 @@
 <template>
-<div class="loader-container" v-if="!closeLoader">
-  <div class="loader">Loading...</div>
-  {{closeTime()}}
-</div>
+  <div class="loader-container" v-if="!closeLoader">
+    <div class="loader">Loading...</div>
+    {{ closeTime() }}
+  </div>
 </template>
 <script>
-
 export default {
   name: 'TheLoader',
   props: {
@@ -19,11 +18,13 @@ export default {
       closeLoader: false
     }
   },
-  computed: { },
+  computed: {},
   methods: {
     closeTime () {
       const time = this.timeout * 1000
-      setTimeout(() => { this.closeLoader = true }, time)
+      setTimeout(() => {
+        this.closeLoader = true
+      }, time)
     }
   }
 }

@@ -1,20 +1,25 @@
 <template>
   <div id="resume">
-    <Loader timeout="10"/>
-      <a :href="url" class="button is-info d-none">DOWNLOAD CV</a>
+    <Loader timeout="10" />
+    <a :href="url" class="button is-info d-none">DOWNLOAD CV</a>
     <PDFViewer :url="url" />
-      <a :href="url" class="button is-info">DOWNLOAD CV</a>
+    <a :href="url" class="button is-info">DOWNLOAD CV</a>
   </div>
 </template>
 
 <script>
 import PDFViewer from '@/modules/PDFViewer/PDFViewer.vue'
 import Loader from '@/components/TheLoader.vue'
+
 export default {
   name: 'Resume',
+  metaInfo: {
+    title: 'My resume || Emmanuel Daniel'
+  },
 
   components: {
-    PDFViewer, Loader
+    PDFViewer,
+    Loader
   },
 
   data () {
@@ -34,7 +39,6 @@ export default {
       this.documentError = e.text
     }
   }
-
 }
 </script>
 
@@ -44,6 +48,7 @@ export default {
   margin: auto;
   margin-bottom: 20px;
 }
+
 #resume a {
   margin: 20px 10px;
 }

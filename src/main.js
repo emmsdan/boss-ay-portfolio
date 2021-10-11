@@ -12,12 +12,10 @@ import '@style'
 import Swal from 'sweetalert2'
 import moment from 'moment'
 import VueMoment from 'vue-moment'
-
-import {
-  ValidationObserver,
-  ValidationProvider,
-  extend
-} from 'vee-validate'
+import VueMeta from 'vue-meta'
+import SlitherSlider from 'slither-slider'
+import { extend, ValidationObserver, ValidationProvider } from 'vee-validate'
+import VueCompositionAPI from '@vue/composition-api'
 
 extend('required', {
   validate (value) {
@@ -29,7 +27,6 @@ extend('required', {
   computesRequired: true
 })
 
-window.Swal = Swal
 const Toast = Swal.mixin({
   toast: true,
   position: 'top-end',
@@ -55,8 +52,11 @@ const token = localStorage.getItem('token')
 if (token) {
   Vue.prototype.$http.defaults.headers.common.Authorization = token
 }
-Vue.use(VueMoment, { moment })
 
+Vue.use(VueCompositionAPI)
+Vue.use(SlitherSlider)
+Vue.use(VueMoment, { moment })
+Vue.use(VueMeta)
 Vue.component('ValidationObserver', ValidationObserver)
 Vue.component('ValidationProvider', ValidationProvider)
 
@@ -66,5 +66,5 @@ Vue.config.performance = true
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount('#app')

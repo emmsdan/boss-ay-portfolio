@@ -1,22 +1,65 @@
 <template>
-  <section class="container">
-      <div class="card-columns">
-        <div v-for="post in portfolio" class="card border-0" :key="post.id">
-          <img class="card-img-top img-fluid" :src="post.thumbnail || randomImage()" alt="Card image cap">
-          <div class="card-content">
-            <h3 class="card-title font-weight-bolder">{{post.title}}</h3>
-            <p class="card-text">{{post.description}}</p>
-          </div>
+  <div>
+    <h3 class="is-size-3" v-if="!hideTitle">
+      Projects/Apps
+      <router-link to="/lab">
+        <button class="cursor button">View all projects</button>
+      </router-link>
+    </h3>
+    <div class="featured">
+      <!--      <div class="&#45;&#45;card">-->
+      <!--        <div class="overlay"/>-->
+      <!--        <img-->
+      <!--          src="https://picsum.photos/200?t"/>-->
+      <!--        <div class="text&#45;&#45;">-->
+      <!--          <div>-->
+      <!--            explore now-->
+      <!--          </div>-->
+      <!--          <a href="#" class="btn-code">-->
+      <!--            explore now-->
+      <!--          </a>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <div class="--card small" v-for="project in portfolio" :key="project.id">
+        <div class="overlay" />
+        <img :src="project.thumbnail || randomImage()" :alt="project.name" />
+        <div class="text">
+          <div class="--title">{{ project.name }}</div>
+          <article class="--details">
+            {{ project.description }}
+            <p v-if="project.url">
+              <br />
+              <a
+                :href="project.url"
+                class="btn-code"
+                target="_blank"
+                :title="project.name + ' Web application'"
+              >
+                explore now
+              </a>
+            </p>
+          </article>
         </div>
       </div>
-  </section>
+    </div>
+
+    <h3 class="is-size-3" v-if="portfolio && portfolio.length > 5">
+      Projects/Apps
+      <router-link to="/lab">
+        <button class="cursor button">View all projects</button>
+      </router-link>
+    </h3>
+  </div>
 </template>
 
 <script>
 import { fetchPortfolio } from '../../services/request'
 
 export default {
-  name: 'InfoCardModule',
+  name: 'FetchPortfolio',
+  props: {
+    hideTitle: Boolean
+  },
   data: () => ({
     portfolio: []
   }),
@@ -25,8 +68,8 @@ export default {
   },
   methods: {
     fetchPortfolio () {
-      fetchPortfolio(7)
-        .then(res => {
+      fetchPortfolio({ limit: 9 })
+        .then((res) => {
           this.portfolio = res.data.data
         })
         .catch(() => {
@@ -35,7 +78,7 @@ export default {
     },
 
     randomImage () {
-      const num = Math.floor((Math.random() * (300)))
+      const num = Math.floor(Math.random() * 300)
       return `https://picsum.photos/200/${num}`
     }
   }

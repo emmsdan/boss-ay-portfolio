@@ -1,6 +1,7 @@
 .dark {
   background: $dark-theme;
   color: $light-theme !important;
+
   header {
     background: $dark-theme-header;
     img {
@@ -26,5 +27,19 @@
       background: $light-theme !important;
       color: $dark-theme-header !important;
     }
+  }
+  .experiment {
+    .slide {
+    }
+    .btn-code {
+      border: 1px solid $light-theme;
+      padding: 10px 20px;
+      background: transparent;
+      color: $light-theme;
+    }
+  }
+
+  hr {
+    background: $light-theme;
   }
 }

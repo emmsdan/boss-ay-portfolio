@@ -4,19 +4,10 @@ module.exports = {
     '<rootDir>/**/__tests__/*.spec.{j,t}s?(x)',
     '<rootDir>/**/tests/unit/**/*.spec.{j,t}s?(x)'
   ],
-  moduleFileExtensions: [
-    'js',
-    'jsx',
-    'json',
-    'vue'
-  ],
-  transformIgnorePatterns: [
-    '<rootDir>/(node_modules)/'
-  ],
+  moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],
+  transformIgnorePatterns: ['<rootDir>/(node_modules)/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1'
   },
-  snapshotSerializers: [
-    'jest-serializer-vue'
-  ]
+  snapshotSerializers: ['jest-serializer-vue']
 }

@@ -16,7 +16,8 @@
   img {
     max-width: 300px;
     width: 100%;
-    filter: invert(22%) sepia(97%) saturate(2910%) hue-rotate(205deg) brightness(90%) contrast(97%) grayscale(10%);
+    filter: invert(22%) sepia(97%) saturate(2910%) hue-rotate(205deg)
+      brightness(90%) contrast(97%) grayscale(10%);
   }
 
   .info {
@@ -26,7 +27,7 @@
     padding: 3rem;
     .picture {
       img {
-        opacity: .3;
+        opacity: 0.3;
         width: 300px;
       }
       @media screen and (max-width: $tablet) {

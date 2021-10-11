@@ -35,11 +35,14 @@
 .radius-6 {
   border-radius: 4rem !important;
 }
-@keyframes slideIn{
-    0%{
-        transform:translateX(-100%);
-        opacity: 0;
-    }
+.m-auto {
+  margin: 0 auto;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 a {
@@ -47,4 +50,51 @@ a {
   :hover {
     text-decoration: none;
   }
+}
+
+.btn-code {
+  text-transform: uppercase;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w-35 {
+  width: 35rem;
+}
+
+.dropdown-item.is-active {
+  background-color: $dark-theme !important;
+  color: $light-theme !important;
+  cursor: pointer;
+  a {
+    color: $light-theme !important;
+  }
+}
+
+.not-fixed {
+  position: relative !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.position-fixed {
+  position: fixed !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.cursor {
+  cursor: pointer !important;
+}
+
+.btn-code {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  border: 1px solid $light-theme;
+  padding: 10px 20px;
+  background: transparent;
+  color: $light-theme;
+  border-radius: 0;
 }
