@@ -1,12 +1,12 @@
 section {
   .header-bar {
-    height: 150px;
+    height: 100px;
     width: 100%;
     position: relative;
     z-index: -1;
   }
   header {
-    z-index: 1;
+    z-index: 30;
     height: 100px;
     width: 100%;
     padding: 10px 40px;
@@ -16,27 +16,27 @@ section {
     display: flex;
     justify-content: space-between;
     img {
-      filter: invert(22%) sepia(97%) saturate(2910%) hue-rotate(205deg) brightness(90%) contrast(97%);
+      filter: invert(22%) sepia(97%) saturate(2910%) hue-rotate(205deg)
+        brightness(90%) contrast(97%);
     }
     .logo {
       padding-top: 15px;
       img {
-        padding-top:10px;
+        padding-top: 10px;
         max-height: 50px;
-        opacity: .7;
+        opacity: 0.7;
         cursor: pointer;
         &:hover {
-          opacity: 1
+          opacity: 1;
         }
       }
     }
     .menu-box {
+      //margin-top: 10px;
       display: flex;
       width: auto;
       justify-content: flex-end;
       .navbar-menu {
-        animation-name: slideIn;
-        animation-duration: 1s;
         box-shadow: none;
       }
       @media screen and (max-width: $tablet) {
@@ -57,7 +57,8 @@ section {
           max-width: 44px;
         }
       }
-      a, a.flex {
+      a,
+      a.flex {
         font-size: 1.5rem;
         padding: 15px;
         border: none;
@@ -67,18 +68,18 @@ section {
         img {
           width: 66px;
           height: 60px;
-          padding: .7rem;
+          padding: 0.7rem;
           @media screen and (min-width: $tablet) {
             padding: 1.3rem;
           }
 
-          &:hover, &:active {
+          &:hover,
+          &:active {
             padding: 10px;
           }
         }
       }
       a.flex {
-
         display: flex;
         flex-direction: column;
         label {
@@ -88,11 +89,12 @@ section {
           text-align: center;
         }
 
-          &:hover, &:active {
-            label {
-              display: none;
-            }
+        &:hover,
+        &:active {
+          label {
+            display: none;
           }
+        }
       }
     }
   }

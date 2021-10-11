@@ -12,7 +12,9 @@ localVue.use(VueRouter)
 describe('Plugins.vue', () => {
   let localStore, localStore2
 
-  afterAll(() => { localStore = localStore2 = null })
+  afterAll(() => {
+    localStore = localStore2 = null
+  })
   beforeEach(() => {
     localStore = new Vuex.Store({
       ...store
@@ -52,7 +54,8 @@ describe('Plugins.vue', () => {
 
   it('should not render second button', () => {
     const wrapper = shallowMount(InfoCard, {
-      store: localStore2, localVue
+      store: localStore2,
+      localVue
     })
     expect(wrapper.isVisible()).toBe(true)
     const button = wrapper.find('button.stack').exists()

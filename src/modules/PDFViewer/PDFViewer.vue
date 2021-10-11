@@ -1,9 +1,11 @@
 <template>
   <div>
     <iframe
-        :src="url" width="100%"
-        height="700px"
-        style="border: none;"></iframe>
+      :src="url"
+      width="100%"
+      height="700px"
+      style="border: none"
+    ></iframe>
   </div>
 </template>
 
@@ -15,8 +17,6 @@ export default {
     header: Boolean
   },
 
-  mounted () {
-
-  }
+  mounted () {}
 }
 </script>

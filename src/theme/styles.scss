@@ -1,30 +1,51 @@
-@import "../assets/bootstrap.min.css";
+//@import "../assets/bootstrap.min.css";
 @import "~bulma/bulma.sass";
 
+// Ensure you include the main styles and modify this path to suite your needs
+@import "~slither-slider/plugin-dist/slither-slider.css";
 
+.slider-slide {
+  margin: 0 200px;
+}
+
+.slider-slides {
+  padding-bottom: 100px;
+}
+
+.slider-dot {
+  width: 20px;
+  height: 20px;
+
+  &.active-slide {
+    background-color: #8fc7e8;
+    color: #8fc7e8;
+  }
+}
 
 // user defined styles
-@import 'colors';
-@import 'font';
-@import 'utils';
+@import "colors";
+@import "font";
+@import "utils";
+@import "animation";
 
-@import 'loader';
-@import 'header';
-@import 'footer';
-@import 'notification';
+@import "loader";
+@import "header";
+@import "footer";
+@import "notification";
 
 // @module
-@import 'infocard';
-@import 'socialmedia';
-@import 'plugin';
+@import "infocard";
+@import "socialmedia";
+@import "plugin";
+@import "experiment";
+@import "login";
 
 // $theme
-@import 'dark';
-@import 'light';
-
+@import "dark";
+@import "light";
 
 * {
-  font-family: 'BalooPaaji';
+  font-family: "BalooPaaji";
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;

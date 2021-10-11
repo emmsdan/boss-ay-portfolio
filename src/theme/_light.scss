@@ -23,4 +23,24 @@
       color: $light-theme !important;
     }
   }
+
+  hr {
+    background: $dark-theme;
+  }
+
+  .experiment {
+    button,
+    .button {
+      border: 1px solid $dark-theme;
+      color: $dark-theme;
+    }
+  }
+  .login {
+    .card,
+    .card-content,
+    .card-header {
+      box-shadow: none !important;
+      //border: none !important;
+    }
+  }
 }

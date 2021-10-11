@@ -8,8 +8,8 @@ export default {
       url: '/resume'
     },
     secondButton: {
-      text: 'How can I help you?',
-      url: 'contact'
+      text: 'View Cool Projects',
+      url: 'lab'
     },
     placeholder: '/public/img/logo.75891cef.png'
   },

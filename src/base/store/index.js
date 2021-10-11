@@ -14,11 +14,18 @@ export default new Vuex.Store({
     isLoggedIn: false,
     showMenu: false
   },
+  getters: {
+    getDarkMode: (state) => {
+      return state.darkMode
+    }
+  },
   mutations: {
     toggleState: (state, stateName) => {
       state[stateName] = !state[stateName]
       if (stateName === 'darkMode') {
         localStorage.setItem('darkMode', !state[stateName])
+        // state.darkMode = !state.darkMode
+        // return
       }
     }
   },

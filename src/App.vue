@@ -1,12 +1,18 @@
 <template>
-<div>
-  <div id="app" :class="darkMode ? 'dark' : 'light'">
-    <TopNotification message="Hi, my web app is still under construction." variant="dark"/>
-    <TheHeader no-shadow/>
-    <router-view/>
+  <div>
+    <div id="app" :class="darkMode ? 'dark' : 'light'">
+      <TopNotification
+        message="Hi, my web app is still under construction."
+        :variant="!darkMode ? 'dark' : 'light'"
+      />
+      <TheHeader no-shadow />
+      <div>
+        <router-view />
+      </div>
 
-    <TheFooter />
-  </div></div>
+      <TheFooter />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -19,7 +25,9 @@ import { mapState } from 'vuex'
 export default {
   name: 'App',
   components: {
-    TheFooter, TheHeader, TopNotification
+    TheFooter,
+    TheHeader,
+    TopNotification
   },
   computed: mapState(['darkMode'])
 }

@@ -1,18 +1,19 @@
 <template>
   <section class="social-media">
     <div class="horizontal">
-      <div class="contact-us">
-        Contact @
-      </div>
+      <div class="contact-us">Contact @</div>
       <div class="social-icon">
         <a :href="twitter">
-          <img src="./assets/twitter.svg" alt="Follow EmmsDan in Twitter"  />
+          <img src="./assets/twitter.svg" alt="Follow EmmsDan in Twitter" />
         </a>
         <a :href="linkedIn">
-          <img src="./assets/linkedin.svg"  alt="Connect with EmmsDan in LinkedIn" />
+          <img
+            src="./assets/linkedin.svg"
+            alt="Connect with EmmsDan in LinkedIn"
+          />
         </a>
         <a :href="clubhouse">
-          <img src="./assets/clubhouse.svg"  alt="Follow EmmsDan in Clubhouse" />
+          <img src="./assets/clubhouse.svg" alt="Follow EmmsDan in Clubhouse" />
         </a>
         <a :href="instagram">
           <img src="./assets/instagram.svg" alt="Follow EmmsDan in Instagram" />

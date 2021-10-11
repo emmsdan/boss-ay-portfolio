@@ -10,7 +10,8 @@
   align-items: center;
   justify-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
+  transition: background 0.25s ease-in;
 
   &.dark {
     background: $dark-theme-header;
@@ -23,7 +24,7 @@
 
   &.black {
     background: $black;
-    color:  $light-theme;
+    color: $light-theme;
   }
 
   .top-message {
@@ -37,6 +38,14 @@
     background: unset;
     padding: 5px;
     cursor: pointer;
-
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
