@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <InfoCard msg=""/>
+    <InfoCard msg="">
+      <template>
+        <SocialMediaModule />
+      </template>
+    </InfoCard>
+    <PluginModule />
     <FetchPortfolio />
   </div>
 </template>
@@ -9,11 +14,16 @@
 // @ is an alias to /src
 import InfoCard from '@module/InfoCard/InfoCard'
 import FetchPortfolio from '@module/FetchPortfolio/FetchPortfolio'
+import SocialMediaModule from '../modules/SocialMedia/SocialMedia'
+import PluginModule from '../modules/Plugins/Plugins'
 
 export default {
   name: 'Home',
   components: {
-    InfoCard, FetchPortfolio
+    PluginModule,
+    SocialMediaModule,
+    InfoCard,
+    FetchPortfolio
   },
   methods: {
   }
