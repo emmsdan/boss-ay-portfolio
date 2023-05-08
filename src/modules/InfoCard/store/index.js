@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    description: ' Tech Evangelist | Solution Architect | Microsoft MVP',
+    description: ' Tech Evangelist | Solution Architect | Microsoft MVP - Business Applications',
     name: 'I am Ayotunde',
     firstButton: {
       text: 'learn more...',

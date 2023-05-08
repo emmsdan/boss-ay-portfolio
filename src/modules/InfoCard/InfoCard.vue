@@ -10,9 +10,9 @@
         <router-link :to="getFirstButtonUrl">
           <button>{{ getFirstButtonText }}</button>
         </router-link>
-        <router-link v-if="getSecondButtonText" :to="getSecondButtonUrl">
+        <a v-if="getSecondButtonText" target="_blank" :href="getSecondButtonUrl">
           <button class="stack">{{ getSecondButtonText }}</button>
-        </router-link>
+        </a>
       </div>
       <slot></slot>
     </div>
