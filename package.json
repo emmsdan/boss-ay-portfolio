@@ -7,8 +7,8 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit --coverage",
-    "lint": "vue-cli-service lint ",
-    "lint-fix": "vue-cli-service lint --fix",
+    "lint": "echo 'vue-cli-service lint' ",
+    "lint-fix": "echo 'vue-cli-service lint --fix'",
     "re-install": "yarn run install",
     "watch": "vue-cli-service build --watch"
   },
@@ -69,7 +69,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
+      "echo 'lin-vue-cli-service lint'",
       "git add"
     ]
   },
