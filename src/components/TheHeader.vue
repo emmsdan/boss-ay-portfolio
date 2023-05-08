@@ -22,17 +22,11 @@
         </a>
         <div :class="'navbar-menu ' + (showMenu && ' is-active')">
           <nav class="navbar-end" role="navigation">
-            <a :href="route.EXPERIMENT">
+            <a :href="getSocial.blog">
               <img src="@/assets/svg/lab.svg" />
             </a>
             <a :href="route.EMMSDAN.CV" class="flex">
               <img src="@/assets/svg/cv.svg" />
-            </a>
-            <a v-if="isLoggedIn" key="user-based-url" :href="route.INDEX">
-              <img src="@/assets/svg/dashboard.svg" />
-            </a>
-            <a v-else key="user-based-url" :href="route.INDEX">
-              <img src="@/assets/svg/book.svg" />
             </a>
 
             <!--            <a :href="route.POSTS">-->
@@ -71,7 +65,7 @@
   </section>
 </template>
 <script>
-import { mapState } from 'vuex'
+import {mapGetters, mapState} from 'vuex'
 import settings from '@settings'
 
 export default {
@@ -98,7 +92,10 @@ export default {
     }
   },
   computed: {
-    ...mapState(['darkMode', 'isLoggedIn', 'showMenu'])
+    ...mapState(['darkMode', 'isLoggedIn', 'showMenu']),
+    ...mapGetters('infoCard', [
+      'getSocial',
+    ])
   }
 }
 </script>

@@ -18,7 +18,8 @@ export default {
     github: 'https://github.com/officialAY',
     instagram: 'https://www.instagram.com/official__ay/',
     facebook: 'https://www.facebook.com/Awhy101',
-    youtube: 'https://www.youtube.com/@ayotundeayoola'
+    youtube: 'https://www.youtube.com/@ayotundeayoola',
+    blog: 'https://stringifyts.com/blog/'
   },
   mutations: {
     update (state, payload) {

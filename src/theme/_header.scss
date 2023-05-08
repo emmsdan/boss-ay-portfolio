@@ -37,6 +37,11 @@ section {
       .navbar-menu {
         box-shadow: none;
       }
+      .navbar-end {
+        display: flex;
+        background: none;
+        justify-content: flex-end;
+      }
       @media screen and (max-width: $tablet) {
         .navbar-menu {
           width: 80%;
@@ -44,11 +49,7 @@ section {
           a {
             margin: auto 10px;
           }
-          .navbar-end {
-            display: flex;
-            background: none;
-            justify-content: flex-end;
-          }
+
         }
         img {
           margin: auto;
