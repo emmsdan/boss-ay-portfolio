@@ -106,7 +106,7 @@ import { fetchPortfolio } from '../services/request'
 export default {
   components: { FetchPortfolio, TopNotification, DropDown },
   metaInfo: {
-    title: 'Experiments || Emmanuel Daniel'
+    title: 'Experiments || Ayotunde Ayoola'
   },
   name: 'Experiment',
   setup () {

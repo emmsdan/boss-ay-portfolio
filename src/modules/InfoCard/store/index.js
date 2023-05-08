@@ -8,8 +8,8 @@ export default {
       url: '/resume'
     },
     secondButton: {
-      text: 'View Cool Projects',
-      url: 'lab'
+      text: 'read my blog posts',
+      url: 'https://stringifyts.com/blog/'
     },
     placeholder: '/AY.png',
     fullName: 'Ayotunde Ayoola',

@@ -56,7 +56,7 @@ import settings from '@/settings.json'
 export default {
   name: 'Login',
   metaInfo: {
-    title: 'Login to access dashboard || Emmanuel Daniel'
+    title: 'Login to access dashboard || Ayotunde Ayoola'
   },
   components: {},
   computed: {

@@ -43,7 +43,7 @@ import settings from '@/settings.json'
 export default {
   name: 'NotFoundPage',
   metaInfo: {
-    title: 'Page not found or under construction || Emmanuel Daniel'
+    title: 'Page not found or under construction || Ayotunde Ayoola'
   },
   components: {},
   computed: {

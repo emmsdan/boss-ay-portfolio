@@ -14,7 +14,7 @@ import Loader from '@/components/TheLoader.vue'
 export default {
   name: 'Resume',
   metaInfo: {
-    title: 'My resume || Emmanuel Daniel'
+    title: 'My resume || Ayotunde Ayoola'
   },
 
   components: {
@@ -24,7 +24,7 @@ export default {
 
   data () {
     return {
-      url: process.env.BASE_URL + 'emmauel-daniel-resume.pdf',
+      url: process.env.BASE_URL + 'Ayotunde-AYOOLA-CV.pdf',
       documentError: undefined,
       enableUploader: false
     }
