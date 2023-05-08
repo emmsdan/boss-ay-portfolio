@@ -3,5 +3,5 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ["plugin:vue/essential"],
+  extends: ["plugin:vue/base"],
 };
