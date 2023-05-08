@@ -11,7 +11,14 @@ export default {
       text: 'View Cool Projects',
       url: 'lab'
     },
-    placeholder: '/AY.png'
+    placeholder: '/AY.png',
+    fullName: 'Ayotunde Ayoola',
+    twitter: 'https://twitter.com/Official___AY',
+    linkedIn: 'https://www.linkedin.com/in/ayotunde-ayoola-27708a89/',
+    github: 'https://github.com/officialAY',
+    instagram: 'https://www.instagram.com/official__ay/',
+    facebook: 'https://www.facebook.com/Awhy101',
+    youtube: 'https://www.youtube.com/@ayotundeayoola',
   },
   mutations: {
     update (state, payload) {
@@ -40,6 +47,9 @@ export default {
     },
     getPlaceholderImage (state) {
       return state.placeholder
+    },
+    getSocial (state) {
+      return state
     }
   }
 }

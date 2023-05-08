@@ -6,7 +6,7 @@
         <SocialMediaModule />
       </template>
     </InfoCard>
-    <PluginModule />
+    <YoutubeModule />
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 // @ is an alias to /src
 import InfoCard from '@module/InfoCard/InfoCard'
 import SocialMediaModule from '../modules/SocialMedia/SocialMedia'
-import PluginModule from '../modules/Plugins/Plugins'
+import YoutubeModule from "../modules/Youtube/Youtube.vue";
 
 export default {
   metaInfo: {
@@ -22,7 +22,7 @@ export default {
   },
   name: 'Home',
   components: {
-    PluginModule,
+    YoutubeModule,
     SocialMediaModule,
     InfoCard
   },

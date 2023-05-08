@@ -48,9 +48,7 @@ export const fetchSkillsList = () => {
   ]
   return {
     async json () {
-      return new Promise((resolve, reject) => {
-        resolve({ data: list })
-      })
+      return { data: list }
     }
   }
 }
