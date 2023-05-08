@@ -13,6 +13,10 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'no-useless-escape': 'off',
     'no-constant-condition': 'off',
-    'no-async-promise-executor': 'off'
+    'no-async-promise-executor': 'off',
+    'vue/no-unused-components': 'off',
+    'vue/no-unused-vars': 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/no-v-html': 'off',
   }
 }

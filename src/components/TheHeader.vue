@@ -75,7 +75,7 @@ import { mapState } from 'vuex'
 import settings from '@settings'
 
 export default {
-  name: 'Header',
+  name: 'TheHeader',
   props: {
     noShadow: {
       type: Boolean,

@@ -18,7 +18,7 @@ import settings from '@/settings'
 const { SITE_MAP, TERMS_AND_CONDITIONS } = settings.route
 
 export default {
-  name: 'Footer',
+  name: 'TheFooter',
   props: {},
   data () {
     return {
