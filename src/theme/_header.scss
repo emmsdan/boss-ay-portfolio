@@ -7,9 +7,9 @@ section {
   }
   header {
     z-index: 30;
-    height: 100px;
+    height: 60px;
     width: 100%;
-    padding: 10px 40px;
+    padding: 4px 40px;
     box-shadow: 0 -20px 42px $blue-gray;
     position: fixed;
     background-color: $white;
@@ -20,11 +20,9 @@ section {
         brightness(90%) contrast(97%);
     }
     .logo {
-      padding-top: 15px;
       img {
-        padding-top: 10px;
-        max-height: 50px;
-        opacity: 0.7;
+        max-height: 60px;
+        opacity: 0.9;
         cursor: pointer;
         &:hover {
           opacity: 1;
@@ -54,13 +52,13 @@ section {
         }
         img {
           margin: auto;
-          max-width: 44px;
+          max-width: 40px;
         }
       }
       a,
       a.flex {
         font-size: 1.5rem;
-        padding: 15px;
+        //padding: 15px;
         border: none;
         @media screen and (max-width: $tablet) {
           padding: 0px;
@@ -75,7 +73,7 @@ section {
 
           &:hover,
           &:active {
-            padding: 10px;
+            padding: 1rem;
           }
         }
       }

@@ -18,7 +18,7 @@ import PluginModule from '../modules/Plugins/Plugins'
 
 export default {
   metaInfo: {
-    title: 'Welcome to MyPortal || Emmanuel Daniel'
+    title: 'Welcome Ayotunde Ayoola'
   },
   name: 'Home',
   components: {

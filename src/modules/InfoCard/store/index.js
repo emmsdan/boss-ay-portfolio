@@ -1,8 +1,8 @@
 export default {
   namespaced: true,
   state: {
-    description: 'passionate about enhancing human potential...',
-    name: 'I am EmmsDan',
+    description: ' Tech Evangelist | Solution Architect | Microsoft MVP',
+    name: 'I am Ayotunde',
     firstButton: {
       text: 'learn more...',
       url: '/resume'
@@ -11,7 +11,7 @@ export default {
       text: 'View Cool Projects',
       url: 'lab'
     },
-    placeholder: '/public/img/logo.75891cef.png'
+    placeholder: '/AY.png'
   },
   mutations: {
     update (state, payload) {

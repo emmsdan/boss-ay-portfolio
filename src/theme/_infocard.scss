@@ -16,8 +16,7 @@
   img {
     max-width: 300px;
     width: 100%;
-    filter: invert(22%) sepia(97%) saturate(2910%) hue-rotate(205deg)
-      brightness(90%) contrast(97%) grayscale(10%);
+    filter: saturate(20%) brightness(90%)
   }
 
   .info {

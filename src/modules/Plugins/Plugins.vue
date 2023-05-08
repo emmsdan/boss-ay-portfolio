@@ -1,16 +1,16 @@
 <template>
   <section class="plugins">
     <div class="horizontal">
-      <Wakatime />
+      <SkillSet />
     </div>
   </section>
 </template>
 
 <script>
-import Wakatime from './Wakatime/Wakatime'
+import SkillSet from './SkillSets/SkillSet'
 export default {
   name: 'PluginModule',
-  components: { Wakatime },
+  components: { SkillSet },
   data: () => {
     return {
       twitter: 'https://twitter.com/emmsdan',

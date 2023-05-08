@@ -29,6 +29,11 @@ export default {
     TheHeader,
     TopNotification
   },
-  computed: mapState(['darkMode'])
+  computed: mapState(['darkMode']),
+  mounted () {
+    if (!localStorage.getItem('darkMode')) {
+      this.$store.commit('toggleState', 'darkMode')
+    }
+  }
 }
 </script>

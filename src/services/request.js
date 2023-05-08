@@ -11,3 +11,46 @@ export const fetchWakaTimeList = () => {
   }
   return $httpP(wakeTime.allTime)
 }
+
+export const fetchSkillsList = () => {
+  const list = [
+    {
+      name: 'Project Management',
+      color: '#FFC107'
+    },
+    {
+      name: 'Web Development',
+      color: '#FF5722'
+    },
+    {
+      name: 'UI/UX Design',
+      color: '#673AB7'
+    },
+    {
+      name: 'Microsoft Azure',
+      color: '#2196F3'
+    },
+    {
+      name: 'Google Cloud Platform'
+    },
+    {
+      name: 'DevOps',
+      color: '#009688'
+    },
+    {
+      name: 'Public Speaking',
+      color: '#4CAF50'
+    },
+    {
+      name: 'Leadership',
+      color: '#FF9800'
+    }
+  ]
+  return {
+    async json () {
+      return new Promise((resolve, reject) => {
+        resolve({ data: list })
+      })
+    }
+  }
+}

@@ -11,7 +11,7 @@ export default {
       text: 'How can I help you?',
       url: 'contact'
     },
-    placeholder: '/public/img/logo.75891cef.png'
+    placeholder: '/ay_logo2.png'
   },
   mutations: {
     update (state, payload) {

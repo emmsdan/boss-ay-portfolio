@@ -1,5 +1,8 @@
 <template>
   <section class="infocard">
+    <div class="picture">
+      <img :src="getPlaceholderImage" />
+    </div>
     <div class="info">
       <h1>{{ getName }}</h1>
       <h2>{{ getDescription }}</h2>
@@ -12,9 +15,6 @@
         </router-link>
       </div>
       <slot></slot>
-    </div>
-    <div class="picture">
-      <img :src="getPlaceholderImage" />
     </div>
   </section>
 </template>
