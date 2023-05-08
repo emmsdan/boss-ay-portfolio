@@ -3,5 +3,24 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ["plugin:vue/base",],
+  extends: ["plugin:vue/essential", "@vue/standard"],
+  parserOptions: {
+    parser: "babel-eslint",
+  },
+  rules: {
+    "no-tabs": 0,
+    "no-console": "error",
+    "no-debugger": "error",
+  },
+  overrides: [
+    {
+      files: [
+        "**/__tests__/*.spec.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)",
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
