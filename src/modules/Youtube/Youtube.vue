@@ -62,11 +62,11 @@ export default {
 
 .thumbnail {
   width: 300px;
-  height: 250px;
+  height: 290px;
   margin: 10px;
 
   overflow: hidden;
-  white-space: nowrap;
+  //white-space: nowrap;
 }
 
 .thumbnail img {

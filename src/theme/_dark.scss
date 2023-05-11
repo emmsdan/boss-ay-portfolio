@@ -42,4 +42,8 @@
   hr {
     background: $light-theme;
   }
+
+  .logo-dark {
+    filter: grayscale(1) brightness(660.5) !important;
+  }
 }

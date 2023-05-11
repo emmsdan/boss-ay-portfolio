@@ -3,7 +3,7 @@
     <header :class="noShadow && 'is-shadowless'">
       <div class="logo">
         <router-link to="/">
-          <img src="/ay_logo2.png" :class="noLogo && 'is-invisible'" />
+          <img src="/ay_logo2.png" :class="`${noLogo && 'is-invisible'} logo-dark`" />
         </router-link>
       </div>
       <div class="menu-box">
