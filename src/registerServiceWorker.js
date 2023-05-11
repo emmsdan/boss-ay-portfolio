@@ -29,6 +29,11 @@ if (process.env.NODE_ENV === 'production') {
     },
     error (error) {
       console.error('Error during service worker registration:', error)
+    },
+    registrationOptions: {
+      scope: './',
+      updateViaCache: 'all',
+      cacheName: 'kirgawa-guest'+(new Date()).getTime()
     }
   })
 }
